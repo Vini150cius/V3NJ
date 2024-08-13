@@ -1,0 +1,67 @@
+.navbarContainer {
+  flex: 1;
+  position: fixed;
+  max-width: 1200px;
+  top: 0;
+  background-color: #000;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+  height: 60px;
+  width: 50%;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 2rem 0 2rem;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 1rem;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+nav .nameSiteDiv {
+  display: flex;
+  margin: 0 6rem 0 2rem;
+}
+
+nav .nameSite {
+  color: #ffe925;
+  font-size: 17pt;
+}
+
+nav .linkListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1px;
+}
+
+nav .linkList {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style: 1px;
+}
+
+nav .itemLinkList a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+
+nav .linkLinkList {
+  color: #fff;
+  transition: 0.2s;
+}
+.linkList a:hover {
+color: #7A28CB;
+}
+
+nav .navbarCapsule {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

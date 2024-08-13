@@ -1,0 +1,408 @@
+/* !CSS do listar */
+.agendaPage {
+  display: flex;
+  max-width: 1200px;
+  width: 100vh;
+  height: 100vh;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.addTaskContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.addTask {
+  background-color: #fbbc04;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 1rem 3rem 1rem 0;
+  transition: 0.5s;
+  object-fit: contain;
+}
+.addTask:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.addTask a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+.agendaList {
+  /* From https://css.glass */
+  background: rgba(161, 161, 161, 0.075);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  width: 1000px;
+  padding: 1rem 0;
+}
+
+.agendaListItem {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(73, 73, 73);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  border-radius: 15px;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.itemCheckboxContainer {
+  margin: 0 1rem;
+}
+
+.dateTask,
+.dateTaskFinish {
+  color: #bfbfc0;
+}
+
+.itemInfoContainer {
+  width: 100%;
+}
+
+.deleteTask {
+  width: 50px;
+  height: 50px;
+  background-color: #777777;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.deleteTask:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.deleteTask svg:hover {
+  color: red;
+  transition: 0.5s;
+}
+.deleteTask svg {
+  color: #fbbc04;
+}
+.editTask {
+  width: 50px;
+  height: 50px;
+  background-color: #777777;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  margin: 0 1rem;
+  padding: 0;
+  line-height: 0;
+}
+.editTask:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.editTask svg:hover {
+  color: rgb(0, 195, 255);
+  transition: 0.5s;
+}
+.editTask svg {
+  color: #fbbc04;
+}
+
+/* Checkbox do site uiverse.io, pelo usuario Shoh2008 */
+.checkbox-wrapper-12 {
+  position: relative;
+}
+
+.checkbox-wrapper-12 > svg {
+  position: absolute;
+  top: -130%;
+  left: -170%;
+  width: 110px;
+  pointer-events: none;
+}
+
+.checkbox-wrapper-12 * {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-12 input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+
+.checkbox-wrapper-12 input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+.checkbox-wrapper-12 .cbx {
+  width: 24px;
+  height: 24px;
+  top: calc(100px - 12px);
+  left: calc(100px - 12px);
+}
+
+.checkbox-wrapper-12 .cbx input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #bfbfc0;
+  border-radius: 50%;
+}
+
+.checkbox-wrapper-12 .cbx label {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: trasnlate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+.checkbox-wrapper-12 .cbx svg {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.checkbox-wrapper-12 .cbx svg path {
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 19;
+  stroke-dashoffset: 19;
+  transition: stroke-dashoffset 0.3s ease;
+  transition-delay: 0.2s;
+}
+
+.checkbox-wrapper-12 .cbx input:checked + label {
+  animation: splash-12 0.6s ease forwards;
+}
+
+.checkbox-wrapper-12 .cbx input:checked + label + svg path {
+  stroke-dashoffset: 0;
+}
+
+@-moz-keyframes splash-12 {
+  40% {
+    background: #fbbc04;
+    box-shadow: 0 -18px 0 -8px #fbbc04, 16px -8px 0 -8px #fbbc04,
+      16px 8px 0 -8px #fbbc04, 0 18px 0 -8px #fbbc04, -16px 8px 0 -8px #fbbc04,
+      -16px -8px 0 -8px #fbbc04;
+  }
+
+  100% {
+    background: #fbbc04;
+    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
+      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
+      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
+  }
+}
+
+@-webkit-keyframes splash-12 {
+  40% {
+    background: #fbbc04;
+    box-shadow: 0 -18px 0 -8px #fbbc04, 16px -8px 0 -8px #fbbc04,
+      16px 8px 0 -8px #fbbc04, 0 18px 0 -8px #fbbc04, -16px 8px 0 -8px #fbbc04,
+      -16px -8px 0 -8px #fbbc04;
+  }
+
+  100% {
+    background: #fbbc04;
+    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
+      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
+      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
+  }
+}
+
+@-o-keyframes splash-12 {
+  40% {
+    background: #fbbc04;
+    box-shadow: 0 -18px 0 -8px #fbbc04, 16px -8px 0 -8px #fbbc04,
+      16px 8px 0 -8px #fbbc04, 0 18px 0 -8px #fbbc04, -16px 8px 0 -8px #fbbc04,
+      -16px -8px 0 -8px #fbbc04;
+  }
+
+  100% {
+    background: #fbbc04;
+    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
+      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
+      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
+  }
+}
+
+@keyframes splash-12 {
+  40% {
+    background: #fbbc04;
+    box-shadow: 0 -18px 0 -8px #fbbc04, 16px -8px 0 -8px #fbbc04,
+      16px 8px 0 -8px #fbbc04, 0 18px 0 -8px #fbbc04, -16px 8px 0 -8px #fbbc04,
+      -16px -8px 0 -8px #fbbc04;
+  }
+
+  100% {
+    background: #fbbc04;
+    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
+      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
+      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
+  }
+}
+
+/* !CSS do salvar */
+.agendaPageSave {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.form-input {
+  background: rgba(161, 161, 161, 0.075);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.agendaPageSave .btn-save input {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+
+  background-color: #fbbc04;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0 3rem 3rem;
+  transition: 0.5s;
+  object-fit: contain;
+}
+.saveTask:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.saveTask a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+/*? Checkbox do site uiverse.io, pelo usuario Satwinder04 */
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 3rem;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #7A28CB;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #7A28CB;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
+
+.input-sob-label {
+  top: -20px;
+  font-size: 12pt;
+  color: #7A28CB;
+}
+
+/* !CSS do excluir */
+.agendaPageDelete {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.cardDeleteAlert {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(161, 161, 161, 0.075);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+
+}
+

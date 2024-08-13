@@ -1,0 +1,52 @@
+.erroPage {
+    width: 100vh;
+    height: 100vh;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.errorCard {
+    display: block;
+border-radius: 15px;
+    padding: 2rem;
+    width: 700px;
+    background-color: #333333;
+    justify-items: center;
+}
+
+.errorCard h3 {
+    font-size: 24pt;
+    text-align: center;
+    color: #ffdc2c;
+}
+
+.errorCard p {
+    font-size: 15pt;
+    text-align: center;
+    
+}
+
+.errorCard button {
+
+    width: 10rem;
+    padding: 1rem;
+    background-color: #ffdc2c;
+    border: none;
+border-radius: 15px;
+}
+.errorCard button a{
+text-decoration: none;
+font-weight: 700;
+font-size: 15pt;
+color: #000;
+
+}
+.returnErroButton{
+    margin: 1rem;
+    justify-content: center;
+    display: flex; 
+    width: 100%;
+}
