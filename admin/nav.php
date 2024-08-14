@@ -1,8 +1,14 @@
 <style>
-    .navbarContainer {
-        z-index: 1000;
+    .linkLinkListA {
+        color: #fff;
+        transition: 0.2s;
     }
-    .linkList a:hover {
+
+    .linkLinkListA:hover {
+        color: #7A28CB;
+    }
+
+    .linkLinkListA.active {
         color: #7A28CB;
     }
 </style>
@@ -18,10 +24,10 @@
         </div>
         <div class="linkListContainer">
             <ul class="linkList">
-                <li class="itemLinkList"><a href="?p=homePage" class="linkLinkList">Início </a></li>
-                <li class="itemLinkList"><a href="?p=agenda/listar" class="linkLinkList">Agenda</a></li>
-                <li class="itemLinkList"><a href="?p=exercises" class="linkLinkList">Exercícios </a></li>
-                <li class="itemLinkList"><a href="?p=about" class="linkLinkList">Sobre</a></li>
+                <li class="itemLinkList"><a href="?p=homePage" class="linkLinkListA">Início </a></li>
+                <li class="itemLinkList"><a href="?p=agenda/listar" class="linkLinkListA">Agenda</a></li>
+                <li class="itemLinkList"><a href="?p=exercises/listar" class="linkLinkListA">Exercícios </a></li>
+                <li class="itemLinkList"><a href="?p=about" class="linkLinkListA">Sobre</a></li>
             </ul>
         </div>
     </div>

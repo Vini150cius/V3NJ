@@ -1,0 +1,165 @@
+.exercisesPage {
+  display: block;
+  max-width: 1200px;
+  width: 100vh;
+  height: 100vh;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.exercisesPage .btn-toggle {
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 13pt;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 2rem;
+  cursor: pointer;
+  transition: 250ms linear;
+}
+.exercisesPage .btn-toggle.active {
+  background-color: #fbbc04;
+  color: #000000;
+}
+.exercisesPage .optionsExercise {
+  border: 5px solid #fbbc04;
+  border-radius: 32px;
+}
+
+.titlePage {
+  display: block;
+  font-size: 20pt;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.optionsExerciseDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.listaDiv {
+  display: flex;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.listaExercicio {
+  display: block;
+}
+.listaExercicio span {
+margin: 0rem 0rem 2rem 2rem;
+}
+
+.cardExercicio {
+  /* From https://css.glass */
+  background: rgba(161, 161, 161, 0.075);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  padding: 2rem;
+  margin: 2rem;
+}
+.nomeExercicio h3 {
+  font-size: 18pt;
+  color: #fbbc04;
+  margin-bottom: 1rem;
+}
+.nomeExercicio {
+  display: flex;
+  justify-content: center;
+}
+.quantRepeticoes p {
+  font-size: 14pt;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 5px;
+}
+.quantSeries p {
+  font-size: 14pt;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 5px;
+}
+.quantPeso p {
+  font-size: 14pt;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 5px;
+}
+.addExerciseContainer {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addExercise {
+  background-color: #fbbc04;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  object-fit: contain;
+}
+.addExercise:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.addExercise a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+/* !CSS do salvar */
+
+.exercisesPageSave {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.exercisesPageSave .btn-save {
+  justify-content: center;
+  display: flex;
+}
+.exercisesPageSave .btn-save .saveExercise {
+  margin: 2rem 0;
+}
+
+.saveExercise:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.saveExercise a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+/* !CSS do excluir */
+.exercisesPageDelete {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}

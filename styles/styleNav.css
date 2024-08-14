@@ -51,12 +51,12 @@ nav .itemLinkList a {
 }
 
 
-nav .linkLinkList {
+.linkLinkListA {
   color: #fff;
   transition: 0.2s;
 }
-.linkList a:hover {
-color: #7A28CB;
+.linkLinkListA:hover {
+  color: #7A28CB;
 }
 
 nav .navbarCapsule {
@@ -65,3 +65,4 @@ nav .navbarCapsule {
   align-items: center;
   justify-content: center;
 }
+

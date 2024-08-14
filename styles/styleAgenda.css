@@ -296,7 +296,7 @@
   align-items: center;
 }
 
-.agendaPageSave .btn-save input {
+.btn-save input {
   text-decoration: none;
   color: #000000;
   font-family: "Poppins", sans-serif;
@@ -367,13 +367,8 @@
 }
 
 /* Input field:focus styles */
-.input-field:focus + .input-label {
-  top: -20px;
-  font-size: 12px;
-  color: #7A28CB;
-}
 
-.input-field:focus + .input-label + .input-highlight {
+.input-field:focus + .input-highlight {
   width: 100%;
 }
 

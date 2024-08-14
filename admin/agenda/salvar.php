@@ -1,8 +1,8 @@
 <main class="agendaPageSave">
     <form method="post" enctype="multipart/form-data" name="frmtask" id="frmtask" class="form-input">
         <div class="input-container">
-            <input placeholder="Insira sua meta" class="input-field" type="text">
-            <label for="input-field" class="input-label">Insira sua meta</label>
+            <label for="" class="input-sob-label">Insira a data de inicialização</label>
+            <input placeholder="Insira sua meta" class="input-field" type="text" id="">
             <span class="input-highlight"></span>
         </div>
 
