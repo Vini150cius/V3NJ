@@ -26,7 +26,6 @@
                     <li class="itemListaExercicio">
                         <div class="cardExercicio">
                             <div class="nomeExercicio" scope="row">
-                                <?= $chave ?>
                                 <h3><?= $mostrar['exercicio'] ?></h3>
                                 <span>
                                     <a href="?p=exercises/excluir" data-confirm>

@@ -2,25 +2,25 @@
     <form method="post" enctype="multipart/form-data" name="frmexercise" id="frmexercise" class="form-input">
         <div class="input-container">
             <label for="" class="input-sob-label">Qual o exercício?</label>
-            <input placeholder="Supino reto" class="input-field" type="text" id="txtexercicio">
+            <input placeholder="Supino reto" class="input-field" type="text" id="txtexercicio" name="txtexercicio">
             <span class="input-highlight"></span>
         </div>
 
         <div class="input-container">
             <label for="" class="input-sob-label">Quantas repetições?</label>
-            <input placeholder="20" class="input-field" type="number" id="nmrrepeticoes">
+            <input placeholder="20" class="input-field" type="number" id="nmrrepeticoes" name="nmrrepeticoes">
             <span class="input-highlight"></span>
         </div>
 
         <div class="input-container">
             <label for="" class="input-sob-label">Quantas series?</label>
-            <input placeholder="4" class="input-field" type="number" id="nmrseries">
+            <input placeholder="4" class="input-field" type="number" id="nmrseries" name="nmrseries">
             <span class="input-highlight"></span>
         </div>
 
         <div class="input-container">
             <label for="" class="input-sob-label">Peso?</label>
-            <input placeholder="8" class="input-field" type="number" id="nmrpeso">
+            <input placeholder="8" class="input-field" type="number" id="nmrpeso" name="nmrpeso">
             <span class="input-highlight"></span>
         </div>
 

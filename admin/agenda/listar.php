@@ -9,8 +9,8 @@
                 <div class="itemContainer">
                     <?php
                     include_once '../class/agenda.php';
-                    $age =new agenda();
-                    $listar = $age-> listar();
+                    $age = new agenda();
+                    $listar = $age->listar();
 
                     if (!empty($listar)) {
                         foreach ($listar as $chave => $mostrar) { ?>
@@ -39,11 +39,11 @@
 
 
                                 <!-- Colocar a data que a tarefa foi adicionada -->
-                                <p class="dateTask"><?= $mostrar = ('datainicio') ?></p>
+                                <p class="dateTask"><?= $mostrar['datainicio'] ?></p>
                                 <!-- Colocar oq é a tarefa -->
-                                <h1 class="titleTask"> <?= $mostrar = ('titulometa') ?></h1>
+                                <h1 class="titleTask"> <?= $mostrar['titulometa'] ?></h1>
                                 <!-- Colocar a data que a tarefa vai ter que ser concluida -->
-                                <p class="dateTaskFinish"> <?= $mostrar = ('datafim') ?> </p>
+                                <p class="dateTaskFinish"> <?= $mostrar['datafim'] ?> </p>
 
 
 
