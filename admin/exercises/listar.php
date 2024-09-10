@@ -16,53 +16,43 @@
 
     <div class="listaDiv">
         <ul class="listaExercicio">
-            <li class="itemListaExercicio">
-                <div class="cardExercicio">
-                    <div class="nomeExercicio">
-                        <h3>supino reto</h3>
-                        <span>
-                            <a href="?p=exercises/excluir" data-confirm>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="quantRepeticoes">
-                        <p>25 repetições</p>
-                    </div>
-                    <div class="quantSeries">
-                        <p>4 series</p>
-                    </div>
-                    <div class="quantPeso">
-                        <p>200 Kg</p>
-                    </div>
-                </div>
-            </li>
-            <li class="itemListaExercicio">
-                <div class="cardExercicio">
-                    <div class="nomeExercicio">
-                        <h3>supino reto</h3>
-                        <span>
-                            <a href="?p=exercises/excluir" data-confirm>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="quantRepeticoes">
-                        <p>25 repetições</p>
-                    </div>
-                    <div class="quantSeries">
-                        <p>4 series</p>
-                    </div>
-                    <div class="quantPeso">
-                        <p>200 Kg</p>
-                    </div>
-                </div>
-            </li>
+            <?php
+            include_once '../class/exercises.php';
+            $exe = new exercises();
+            $listar = $exe->listar();
 
+            if (!empty($listar)) {
+                foreach ($listar as $chave => $mostrar) { ?>
+                    <li class="itemListaExercicio">
+                        <div class="cardExercicio">
+                            <div class="nomeExercicio" scope="row">
+                                <?= $chave ?>
+                                <h3><?= $mostrar['exercicio'] ?></h3>
+                                <span>
+                                    <a href="?p=exercises/excluir" data-confirm>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#e8eaed">
+                                            <path
+                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="quantRepeticoes">
+                                <p><?= $mostrar['repeticoes'] ?></p>
+                            </div>
+                            <div class="quantSeries">
+                                <p><?= $mostrar['series'] ?></p>
+                            </div>
+                            <div class="quantPeso">
+                                <p><?= $mostrar['peso'] ?></p>
+                            </div>
+                        </div>
+                    </li>
+                    <?php
+                }
+            }
+            ?>
         </ul>
     </div>
 </main>
