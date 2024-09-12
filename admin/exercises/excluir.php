@@ -4,9 +4,9 @@
         $id = filter_input(INPUT_GET, 'id');
 
         include_once '../class/exercises.php';
-        $age = new agenda();
+        $exe = new exercises();
 
-        if ($age->excluir($id) === 'null') {
+        if ($exe->excluir($id) === 'null') {
             $msg = "Excluido";
         } else {
             $msg = "Erro ao excluir";
