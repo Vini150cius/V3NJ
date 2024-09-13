@@ -63,6 +63,7 @@ margin: 0rem 0rem 2rem 2rem;
   -webkit-backdrop-filter: blur(3.5px);
   padding: 2rem;
   margin: 2rem;
+  min-width: 300px;
 }
 .nomeExercicio h3 {
   font-size: 18pt;

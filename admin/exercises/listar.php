@@ -24,11 +24,11 @@
             if (!empty($listar)) {
                 foreach ($listar as $chave => $mostrar) { ?>
                     <li class="itemListaExercicio">
-                        <div class="cardExercicio">
+                        <div class="cardExercicio" style="min-width: 300px;">
                             <div class="nomeExercicio" scope="row">
                                 <h3><?= $mostrar['exercicio'] ?></h3>
                                 <span>
-                                    <a href="?p=exercises/excluir" data-confirm>
+                                    <a href="?p=exercises/excluir&id=<?= $chave ?>" data-confirm>
                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
                                             width="24px" fill="#e8eaed">
                                             <path
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </li>
-                    <?php
+            <?php
                 }
             }
             ?>

@@ -13,6 +13,7 @@ class  agenda
     {
         $this->jsonDados = $JsonDados;
     }
+
     public function salvar()
     {
         $caminho = curl_init($this->url . 'agenda.json');
@@ -26,9 +27,10 @@ class  agenda
 
         return $resposta;
     }
+
     public function listar()
     {
-        $caminho = curl_init($this->url.'agenda.json');
+        $caminho = curl_init($this->url . 'agenda.json');
 
         curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
 
@@ -36,31 +38,34 @@ class  agenda
         curl_close($caminho);
 
         return $dados = json_decode($resposta, true);
+
+        
     }
+
     public function excluir($id)
     {
         $node = "agenda/" . $id;
         $caminho = curl_init($this->url . $node . '.json');
         curl_setopt($caminho, CURLOPT_CUSTOMREQUEST, "DELETE");
-        
-
-       
+        curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
         curl_close($caminho);
+
         $resposta = curl_exec($caminho);
         return $resposta;
     }
-    public function editar($id){
-        $node ="agenda/". $id;
-        $caminho = curl_init($this ->url . $node . '.json' );
-curl_setopt($caminho, CURLOPT_CUSTOMREQUEST, 'PATCH');
-curl_setopt($caminho , CURLOPT_POSTFIELDS, $this ->jsonDados);
-curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
- $resposta = curl_exec($caminho);
- if ($resposta === FALSE){
-    die('Erro na requisição: ' . curl_error ($caminho));
- } 
- curl_close($caminho);
+    public function editar($id)
+    {
+        $node = "agenda/" . $id;
+        $caminho = curl_init($this->url . $node . '.json');
+        curl_setopt($caminho, CURLOPT_CUSTOMREQUEST, 'PATCH');
+        curl_setopt($caminho, CURLOPT_POSTFIELDS, $this->jsonDados);
+        curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
+        $resposta = curl_exec($caminho);
+        if ($resposta === FALSE) {
+            die('Erro na requisição: ' . curl_error($caminho));
+        }
+        curl_close($caminho);
 
- echo $resposta;
+        echo $resposta;
     }
 }
