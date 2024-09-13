@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="./../styles/globalStyle.css">
 <link rel="stylesheet" href="./../styles/styleHome.css">
 <link rel="stylesheet" href="./../styles/styleErrorPage.css">
-<link rel="stylesheet" href="./../styles/styleAgenda.css">
 <link rel="stylesheet" href="./../styles/styleExercises.css">
+<link rel="stylesheet" href="./../styles/styleAgenda.css">
 
 <!-- Fontes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
