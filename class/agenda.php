@@ -86,7 +86,7 @@ class  agenda
 
             return $resposta;
         } else {
-            echo "Al missar ruibir";
+            echo "Felix qui potuit rerum cognoscere causas";
         }
     }
 }

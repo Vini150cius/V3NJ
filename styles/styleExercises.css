@@ -72,7 +72,10 @@ margin: 0rem 0rem 2rem 2rem;
 }
 .nomeExercicio {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+.nomeExercicio a{
+color: transparent;
 }
 .quantRepeticoes p {
   font-size: 14pt;
@@ -120,7 +123,9 @@ margin: 0rem 0rem 2rem 2rem;
   font-weight: 600;
   font-size: 12pt;
 }
-
+.bi-pencil-square {
+  fill: #ffffff; 
+}
 /* !CSS do salvar */
 
 .exercisesPageSave {
@@ -156,6 +161,17 @@ margin: 0rem 0rem 2rem 2rem;
 
 /* !CSS do excluir */
 .exercisesPageDelete {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* !CSS do editar */
+.exercisesPageEdit {
   display: flex;
   max-width: 1200px;
   width: 100%;
