@@ -55,17 +55,6 @@ class  agenda
     }
     public function editar($id)
     {
-        $node = "agenda/" . $id;
-        $caminho = curl_init($this->url . $node . '.json');
-        curl_setopt($caminho, CURLOPT_CUSTOMREQUEST, 'PATCH');
-        curl_setopt($caminho, CURLOPT_POSTFIELDS, $this->jsonDados);
-        curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
-        $resposta = curl_exec($caminho);
-        if ($resposta === FALSE) {
-            die('Erro na requisição: ' . curl_error($caminho));
-        }
-        curl_close($caminho);
-
-        echo $resposta;
+    
     }
 }
