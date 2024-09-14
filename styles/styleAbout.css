@@ -40,6 +40,10 @@
   width: 250px;
   border-radius: 25px;
   object-fit: cover;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
 }
 .linkMarcio {
   text-decoration: none;
@@ -110,6 +114,10 @@ background-color: #7a28cb;
   padding-top: 10px;
   margin: auto;
   font-family: inherit;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
 }
 
 .card span {

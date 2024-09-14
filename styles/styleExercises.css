@@ -29,10 +29,12 @@
 
 .titlePage {
   display: block;
-  font-size: 20pt;
-  font-weight: 400;
   text-align: center;
   margin-bottom: 1rem;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 35pt;
+  font-weight: 800;
 }
 
 .optionsExerciseDiv {
@@ -123,9 +125,6 @@ color: transparent;
   font-weight: 600;
   font-size: 12pt;
 }
-.bi-pencil-square {
-  fill: #ffffff; 
-}
 /* !CSS do salvar */
 
 .exercisesPageSave {
@@ -179,4 +178,11 @@ color: transparent;
   padding: 8rem 2rem;
   margin: 0 auto;
   justify-content: center;
+}
+
+.input-field-edit{
+  color: #000000;
+}
+.btn-save input {
+  cursor: pointer;
 }
