@@ -1,0 +1,178 @@
+.aboutPage {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.head h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 40pt;
+  font-weight: 800;
+}
+.aboutPageWrapper {
+  display: block;
+}
+.description {
+  display: block;
+}
+.descriptionTitle {
+  margin-top: 5rem;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: center;
+  color: #fabb04;
+}
+.descriptionContent {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+.descriptionContent p {
+  font-size: 15pt;
+  padding: 2rem;
+}
+.description img {
+  display: block;
+  width: 250px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.linkMarcio {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.linkMarcio:hover {
+  color: #fabb04;
+}
+.skills {
+  display: block;
+}
+
+.skillsTitle {
+  margin-top: 5rem;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: center;
+  color: #fabb04;
+}
+
+.skillsContent p {
+  font-size: 15pt;
+  padding: 2rem;
+}
+.dataSkills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dataSkills input[type="range"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dataSkills label {
+  color: #fabb04;
+  font-weight: 600;
+  font-size: 14pt;
+  margin-bottom: 1rem;
+}
+
+.members {
+  display: block;
+}
+
+.membersTitle {
+  margin-top: 5rem;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: center;
+  color: #fabb04;
+}
+
+.membersContent {
+    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 2rem; /
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+background-color: #7a28cb;
+  border: none;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin: auto;
+  font-family: inherit;
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+.card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.card .img {
+  width: 100px;
+  height: 100px;
+  background: #e8e8e8;
+  background-size: cover;
+  background-position: center; 
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+.card .imgVinicius{
+    background-color: #212121;
+}
+.card .imgJose{
+    background-image: url(./../assets/members/jose.png);
+}
+.card .imgNicollas{
+    background-image: url(./../assets/members/nicollas.png);
+}
+.card .imgNicolas{
+    background-image: url(./../assets/members/nicolas.png);
+}
+.card .imgNaresh{
+    background-image: url(./../assets/members/naresh.jpg);
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #e8e8e8;
+  color: #111111;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background: #212121;
+    cursor: pointer;
+    color: #ffffff;
+}
+.linkMember{
+    text-decoration: none;
+}

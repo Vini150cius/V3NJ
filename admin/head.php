@@ -2,8 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>V3NJ</title>
 
-<link rel="shortcut icon" href="./../assets/" type="image/x-icon">
-
 <!-- CSS -->
 <link rel="stylesheet" href="./../styles/styleNav.css">
 <link rel="stylesheet" href="./../styles/globalStyle.css">
@@ -11,6 +9,7 @@
 <link rel="stylesheet" href="./../styles/styleErrorPage.css">
 <link rel="stylesheet" href="./../styles/styleExercises.css">
 <link rel="stylesheet" href="./../styles/styleAgenda.css">
+<link rel="stylesheet" href="./../styles/styleAbout.css">
 
 <!-- Fontes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
