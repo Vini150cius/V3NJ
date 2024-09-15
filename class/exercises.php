@@ -88,4 +88,16 @@ class  exercises
             echo "Felix qui potuit rerum cognoscere causas";
         }
     }
+    public function visualizarDadosNoEditar($id) 
+    {
+        $node = "exercises/" . $id;
+        $caminho = curl_init($this->url . $node . '.json');
+
+        curl_setopt($caminho, CURLOPT_RETURNTRANSFER, true);
+
+        $resposta = curl_exec($caminho);
+        curl_close($caminho);
+
+        return $dados = json_decode($resposta, true);
+    }
 }
