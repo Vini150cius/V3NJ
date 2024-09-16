@@ -473,3 +473,23 @@
   font-size: 14pt;
   color: #afafaf;
 }
+
+.btn-back a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+  background-color: #bdbdbd;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 3rem 0 3rem 3rem;
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.btn-save {
+  display: ruby;
+}

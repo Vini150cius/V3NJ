@@ -13,7 +13,7 @@
         $pagina = filter_input(INPUT_GET, 'p');
 
         if (empty($pagina)) {
-            include_once 'homePage.php';
+            include_once 'agenda/listar.php';
         } else {
             if (file_exists($pagina . '.php')) {
                 include_once $pagina . '.php';

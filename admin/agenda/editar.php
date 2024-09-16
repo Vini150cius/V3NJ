@@ -30,6 +30,9 @@ $dadosAntigos = $visualizar->visualizarDadosNoEditar($id);
         <input type="hidden" name="id" value="<?php echo $id; ?>" style="color: whitesmoke;">
         <div class="btn-save">
             <input type="submit" class="saveTask" name="btnsalvar" id="btnsalvar" value="Salvar alterações" />
+            <div class="btn-back">
+                <a href="?p=exercises/listar">Voltar</a>
+            </div>
         </div>
     </form>
 </main>
