@@ -16,7 +16,10 @@
 <nav class="navbarContainer">
     <div class="navbarCapsule">
         <div class="nameSiteDiv">
-            <img style="width: 70px; height: 70px; object-fit: contain;" src="./../assets/tituloSite.png" alt="">
+            <a href="\v3nj/public">
+                <img style="width: 70px; height: 70px; object-fit: contain;" src="./../assets/tituloSite.png" alt="">
+            </a>
+
             <!-- <h1 class="nameSite">
                 V3NJ
             </h1> -->

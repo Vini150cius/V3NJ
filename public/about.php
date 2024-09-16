@@ -5,7 +5,7 @@
         </section>
         <section class="description">
             <div class="descriptionContent">
-                <img src="./assets/programmingphoto.jpg" alt="">
+                <img src="./../assets/programmingphoto.jpg" alt="">
                 <div>
                     <div class="descriptionTitle">
                         <h1>Por que a realização do projeto?</h1>
@@ -94,7 +94,7 @@
                     <div class="imgNaresh img">
                     </div>
                     <span> Naresh Sharma </span>
-                    <p class="job"> Job </p>
+                    <p class="job"> Firebase </p>
                     <a href="https://github.com/india" target="_blank" rel="noopener noreferrer" class="linkMember">
                         <button> Saiba mais </button>
                     </a>

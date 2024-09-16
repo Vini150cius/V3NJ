@@ -16,7 +16,7 @@
 <nav class="navbarContainer">
     <div class="navbarCapsule">
         <div class="nameSiteDiv">
-            <a href="\">
+            <a href="\v3nj/admin">
                 <img style="width: 70px; height: 70px; object-fit: contain;" src="./../assets/tituloSite.png" alt="icone do V3NJ">
             </a>
         </div>
