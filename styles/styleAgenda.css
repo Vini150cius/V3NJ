@@ -99,6 +99,29 @@
 .deleteTask svg {
   color: #fbbc04;
 }
+.viewTask {
+  width: 50px;
+  height: 50px;
+  background-color: #777777;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.viewTask:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.viewTask svg:hover {
+  color: red;
+  transition: 0.5s;
+}
+.viewTask svg {
+  color: #fbbc04;
+}
 .editTask {
   width: 50px;
   height: 50px;

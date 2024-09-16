@@ -24,9 +24,11 @@
         </div>
         <div class="linkListContainer">
             <ul class="linkList">
-                <li class="itemLinkList"><a href="?p=agenda/listar" class="linkLinkListA">Agenda</a></li>
-                <li class="itemLinkList"><a href="?p=exercises/listar" class="linkLinkListA">Exercícios </a></li>
-                <li class="itemLinkListLogin"><a href="../public/login.html" class="linkLinkListLoginA">Log out </a></li>
+                <li class="itemLinkList"><a href="?p=homePage" class="linkLinkListA">Início </a></li>
+                <li class="itemLinkList"><a href="?p=agenda/agenda" class="linkLinkListA">Agenda</a></li>
+                <li class="itemLinkList"><a href="?p=exercises/exercises" class="linkLinkListA">Exercícios </a></li>
+                <li class="itemLinkList"><a href="?p=about" class="linkLinkListA">Sobre</a></li>
+                <li class="itemLinkListLogin"><a href="login.html" class="linkLinkListLoginA">Login </a></li>
             </ul>
         </div>
     </div>
