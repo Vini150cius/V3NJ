@@ -2,18 +2,18 @@
     <form method="post" enctype="multipart/form-data" name="frmtask" id="frmtask" class="form-input">
         <div class="input-container">
             <label for="" class="input-sob-label">Insira um título</label>
-            <input placeholder="Insira o título de sua meta" class="input-field" type="text" id="txttitulometa" name="txttitulometa">
+            <input placeholder="Insira o título de sua meta" class="input-field" type="text" id="txttitulometa" name="txttitulometa" required>
             <span class="input-highlight"></span>
         </div>
         <div class="input-container">
             <label for="" class="input-sob-label">Insira a data de inicialização</label>
-            <input placeholder="Insira a data de inicialização" class="input-field" type="date" id="datedatainicio" name="datedatainicio">
+            <input placeholder="Insira a data de inicialização" class="input-field" type="date" id="datedatainicio" name="datedatainicio" required>
             <span class="input-highlight"></span>
         </div>
 
         <div class="input-container">
             <label for="" class="input-sob-label">Insira a data de finalização</label>
-            <input placeholder="Insira a data de finalização" class="input-field" type="date" id="datedatafim" name="datedatafim">
+            <input placeholder="Insira a data de finalização" class="input-field" type="date" id="datedatafim" name="datedatafim" required>
             <span class="input-highlight"></span>
         </div>
 
@@ -27,12 +27,13 @@
         $datainicio = filter_input(INPUT_POST, "datedatainicio");
         $datafim = filter_input(INPUT_POST, "datedatafim");
 
+
         $dados = array(
             "titulometa" =>$titulometa,
             "datainicio" => $datainicio,
             "datafim" => $datafim
+        );     
 
-        );
         include_once '../class/agenda.php';
         $age = new agenda();
         $age->setJsonDados(json_encode($dados));
@@ -44,3 +45,4 @@
     }
     ?>
 </main>
+<script src="../js/validacao.js"></script>
