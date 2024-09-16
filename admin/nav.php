@@ -16,11 +16,9 @@
 <nav class="navbarContainer">
     <div class="navbarCapsule">
         <div class="nameSiteDiv">
-            <img style="width: 70px; height: 70px; object-fit: contain;" src="./../assets/tituloSite.png" alt="">
-            <!-- <h1 class="nameSite">
-                V3NJ
-            </h1> -->
-
+            <a href="\">
+                <img style="width: 70px; height: 70px; object-fit: contain;" src="./../assets/tituloSite.png" alt="icone do V3NJ">
+            </a>
         </div>
         <div class="linkListContainer">
             <ul class="linkList">

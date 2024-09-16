@@ -40,6 +40,7 @@
         $msg = $age->salvar() === true ? "erro" : "dados salvos";
         echo "<script>alert('$msg')"
         ."</script>";
+        echo '<meta http-equiv="refresh" content="0.1; URL=?p=agenda/listar">';
     }
     ?>
 </main>

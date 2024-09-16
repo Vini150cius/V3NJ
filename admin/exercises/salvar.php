@@ -49,6 +49,7 @@
         $msg = $exe->salvar() === true ? "erro" : "dados salvos";
         echo "<script>alert('$msg')"
         ."</script>";
+        echo '<meta http-equiv="refresh" content="0.1; URL=?p=exercises/listar">';
     }
     ?>
 </main>
