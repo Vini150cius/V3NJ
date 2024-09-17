@@ -45,7 +45,7 @@ Os resultados esperados com o “V3NJ” incluem uma maior adesão aos planos de
     </td>
     <td align="center">
       <a href="https://github.com/TABAQUINH" title="Github do integrante">
-        <img src="./assets/members/nicolas.png" width="100px;" alt="Foto do integrante"/><br>
+        <img src="./assets/members/nicolas.jpg" width="100px;" alt="Foto do integrante"/><br>
         <sub>
           <b>Nicolas Spinelli</b>
         </sub>
