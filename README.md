@@ -20,46 +20,35 @@ Os resultados esperados com o “V3NJ” incluem uma maior adesão aos planos de
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Vini150cius" title="Github do integrante">
-        <img src="./assets/members/vinicius.jpg" width="100px;" alt="Foto do integrante"/><br>
-        <sub>
-          <b>Vinicius Porto</b>
-        </sub>
+      <a href="https://github.com/Vini150cius" title="Github do Vinicius">
+        <img src="https://avatars.githubusercontent.com/u/126972477?v=4" width="100px;" alt="Foto do Vinicius"/><br>
+        <sub><b>Vinicius Porto</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/JoseSouza2007" title="Github do integrante">
-        <img src="./assets/members/jose.png" width="100px;" alt="Foto do integrante"/><br>
-        <sub>
-          <b>José Margarido</b>
-        </sub>
+      <a href="https://github.com/JoseSouza2007" title="Github do José">
+        <img src="https://avatars.githubusercontent.com/u/163062463?v=4" width="100px;" alt="Foto do José"/><br>
+        <sub><b>José de Souza</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/NicollasMSR" title="Github do integrante">
-        <img src="./assets/members/nicollas.png" width="100px;" alt="Foto do integrante"/><br>
-        <sub>
-          <b>Nicollas Reis</b>
-        </sub>
+      <a href="https://github.com/Naresh-matheus" title="Github do Naresh">
+        <img src="https://avatars.githubusercontent.com/u/170425770?v=4" width="100px;" alt="Foto do Naresh"/><br>
+        <sub><b>Naresh Sharma</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/TABAQUINH" title="Github do integrante">
-        <img src="./assets/members/nicolas.jpg" width="100px;" alt="Foto do integrante"/><br>
-        <sub>
-          <b>Nicolas Spinelli</b>
-        </sub>
+      <a href="https://github.com/NicolasSpinelli008" title="Github do Nicolas">
+        <img src="https://avatars.githubusercontent.com/u/163760447?v=4" width="100px;" alt="Foto do Nicolas"/><br>
+        <sub><b>Nicolas Spinelli</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="#" title="Github do integrante">
-        <img src="./assets/members/naresh.jpg" width="100px;" alt="Foto do integrante"/><br>
-        <sub>
-          <b>Naresh Sharma</b>
-        </sub>
+      <a href="https://github.com/NicollasMSR" title="Github do Nicollas">
+        <img src="https://avatars.githubusercontent.com/u/141236294?v=4" width="100px;" alt="Foto do Nicollas"/><br>
+        <sub><b>Nicollas Reis</b></sub>
       </a>
     </td>
-    
   </tr>
 </table>
 
